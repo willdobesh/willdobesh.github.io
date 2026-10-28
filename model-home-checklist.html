@@ -188,7 +188,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
         <button type="button" class="sn-toggle" aria-expanded="false" aria-controls="sn-menu"><span class="sn-toggle-label">Resources</span><span class="sn-chev" aria-hidden="true"></span></button>
         <div class="sn-menu" id="sn-menu">
           <a href="index.html">Home<small>Start here: buying, building or selling</small></a>
-          <a href="new-construction.html">The 9 steps of buying new<small>How buying from a builder works</small></a>
+          <a href="new-construction.html">The 9 steps of building new<small>How buying from a builder works</small></a>
           <a href="true-cost-calculator.html">True cost calculator<small>Your real price before you tour</small></a>
           <a href="incentives.html">Builder incentives<small>What builders are offering right now</small></a>
           <a href="before-you-build.html">Before You Build checklist<small>Track every step, print or save</small></a>
@@ -297,8 +297,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 <script>
 var SECTIONS=[
  ["Before you walk in",[
-  ["Bring your agent to the first visit.","Many builders will only pay your agent if they're registered at your very first visit, so ask about this before you sign the guest card, or you might have to pay your agent's commission on your own."],
-  ["Bring your pre-approval or a budget you're sure of.","So you know right away which plans are realistic."]]],
+  ["Bring your agent to the first visit.","Many builders will only pay your agent if they're registered at your very first visit, so ask about this before you sign the guest card, or you might have to pay your agent's commission on your own.",null],
+  ["Bring your pre-approval or a budget you're sure of.","So you know right away which plans are realistic.","Your price range"]]],
  ["The model and what's included",[
   ["Which features in this model are standard, and which are upgrades?","Many builders have a standards sheet or PDF they can share."],
   ["Can I see the standard finishes (flooring, cabinets, counters, fixtures) in person or in photos?"],
@@ -349,7 +349,7 @@ var SECTIONS=[
     sec[1].forEach(function(q){
       n++;
       html+='<div class="q"><input type="checkbox" id="q'+n+'" data-key="q'+n+'" aria-labelledby="t'+n+'"><span class="n">'+n+'</span><label class="txt" id="t'+n+'" for="q'+n+'">'+esc(q[0])+(q[1]?'<span class="tip">'+esc(q[1])+'</span>':'')+'</label>'+
-        (sec[2]?'':'<div class="ans"><input class="line" data-key="a'+n+'" placeholder="Their answer" aria-label="Answer to question '+n+'"></div>')+'</div>';
+        ((sec[2]||q[2]===null)?'':'<div class="ans"><input class="line" data-key="a'+n+'" placeholder="'+esc(q[2]||'Their answer')+'" aria-label="'+esc(q[2]||'Answer')+', question '+n+'"></div>')+'</div>';
     });
     if(sec[2]) html+='<p class="agent-note">The sales rep works for the builder. These two are for your own agent.</p>';
     html+='</section>';
