@@ -122,6 +122,24 @@ input:user-invalid{border-color:#b3261e}
 .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 @media (max-width:600px){.grid-4{grid-template-columns:1fr 1fr}}
 </style>
+<link rel="canonical" href="https://willdobesh.github.io/home-value.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Will Dobesh | Utah County Real Estate">
+<meta property="og:title" content="What's My Home Worth? | Will Dobesh, Utah County">
+<meta property="og:description" content="Find out what your Utah County home is really worth. Will Dobesh pulls recent sales near you and sends a real price range, your net after the sale, and a cash offer comparison.">
+<meta property="og:url" content="https://willdobesh.github.io/home-value.html">
+<meta property="og:image" content="https://willdobesh.github.io/share-home-value.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What's My Home Worth? | Will Dobesh, Utah County">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What's My Home Worth? | Will Dobesh, Utah County">
+<meta name="twitter:description" content="Find out what your Utah County home is really worth. Will Dobesh pulls recent sales near you and sends a real price range, your net after the sale, and a cash offer comparison.">
+<meta name="twitter:image" content="https://willdobesh.github.io/share-home-value.jpg">
+<script>
+/* Lead source tracking: remembers ?src=... from the link someone first used */
+(function(){try{var s=new URLSearchParams(location.search).get("src");if(s){s=s.replace(/[^a-z0-9_-]/gi,"").slice(0,40);if(!localStorage.getItem("wd_src"))localStorage.setItem("wd_src",s);localStorage.setItem("wd_src_last",s);}}catch(e){}})();
+</script>
 </head>
 <body>
 
@@ -369,7 +387,8 @@ input:user-invalid{border-color:#b3261e}
   var status=document.getElementById('status');
   var params=new URLSearchParams(location.search);
   var from=params.get('from')||(document.referrer?document.referrer.split('/').pop().split('?')[0]:'');
-  document.getElementById('sourceField').value=from||'Direct visit';
+  var src='';try{src=localStorage.getItem('wd_src')||'';var last=localStorage.getItem('wd_src_last')||'';if(last&&last!==src)src+=' (most recently '+last+')';}catch(e){}
+  document.getElementById('sourceField').value=(src?'Link: '+src:'No tracking link')+' | Page before form: '+(from||'direct visit');
 
   form.addEventListener('submit',function(e){
     e.preventDefault();
