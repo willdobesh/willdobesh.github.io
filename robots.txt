@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://willdobesh.github.io/sitemap.xml
