@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Live Like a Local: Hidden Gems of South Utah County | Will Dobesh</title>
+<meta name="description" content="Things to do in Springville, Spanish Fork, Salem, Payson and Santaquin: canyon drives, hot springs, drive-ins, farm stands, museums and family parks, from local agent Will Dobesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000000; --white:#FFFFFF; --gold:#E6AE37; --gold-hi:#F2C065; --gold-light:#FAD77B; --gold-dark:#9a6a0c;
+  --ink-soft:rgba(0,0,0,.66); --rule:rgba(0,0,0,.14); --soft:#F7F5F1;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"DM Sans", Helvetica, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--black);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 14px}
+
+.hero{background:var(--black);color:var(--white);padding:64px 0 72px}
+.hero h1{font-family:var(--display);font-weight:600;font-size:clamp(46px,7vw,84px);line-height:1;margin:0 0 20px}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero p{margin:0 0 14px;max-width:60ch;color:rgba(255,255,255,.82);font-size:19px}
+.hero .story{border-left:3px solid var(--gold);padding-left:16px;color:rgba(255,255,255,.9);font-size:17px}
+
+.filters{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--rule)}
+.filters .wrap{padding-top:14px;padding-bottom:12px}
+.frow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px}
+.frow:last-child{margin-bottom:0}
+.flabel{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink-soft);width:52px;flex:none}
+.fb{font:500 14px var(--body);padding:7px 14px;border-radius:999px;border:1px solid var(--rule);background:var(--white);color:var(--black);cursor:pointer}
+.fb:hover{border-color:var(--black)}
+.fb[aria-pressed="true"]{background:var(--black);border-color:var(--black);color:var(--white)}
+.count{font-size:14px;color:var(--ink-soft);margin:28px 0 0}
+
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:16px 0 0}
+.spot{display:flex;flex-direction:column;border:1px solid var(--rule);background:var(--white)}
+.spot[hidden]{display:none}
+.ph{position:relative;aspect-ratio:3/2;background:var(--black);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph .fallback{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 20px;border-top:3px solid var(--gold);color:var(--white)}
+.ph .fallback span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--gold-light)}
+.ph .fallback strong{font-family:var(--display);font-size:28px;font-weight:600;line-height:1.05;margin-top:4px}
+.ph.has-photo .fallback{display:none}
+.body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.meta{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold-dark);margin:0 0 6px}
+.spot h2{font-family:var(--display);font-size:27px;font-weight:600;line-height:1.1;margin:0 0 10px}
+.spot p{margin:0 0 12px;font-size:16px}
+.mine{border-left:3px solid var(--gold);padding:8px 0 8px 12px;background:var(--soft);font-size:15px;font-style:italic}
+.dir{margin-top:auto;padding-top:6px;font-weight:700;font-size:15px;text-decoration:none}
+.dir:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+
+.mapleton{margin:56px 0 0;padding:26px 28px;background:var(--soft);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.mapleton strong{font-family:var(--display);font-size:26px;font-weight:600}
+.mapleton p{margin:0;font-size:16px;color:var(--ink-soft)}
+
+.next{margin-top:88px;padding:56px 0 96px;border-top:2px solid var(--gold)}
+.next h2{font-family:var(--display);font-size:clamp(32px,4.4vw,44px);font-weight:600;line-height:1.08;margin:0 0 10px}
+.next > .wrap > p{margin:0 0 24px;color:var(--ink-soft);max-width:58ch}
+.next-btns{display:flex;flex-wrap:wrap;gap:12px}
+.nb{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px}
+.nb-black{background:var(--black);color:var(--white)}
+.nb-black:hover{background:var(--gold);color:var(--black)}
+.nb-line{border:2px solid var(--black)}
+.nb-line:hover{background:var(--black);color:var(--white)}
+.suggest{margin-top:28px;font-size:16px;color:var(--ink-soft)}
+.suggest a{font-weight:700;color:var(--black);text-decoration-color:var(--gold);text-underline-offset:4px}
+
+.site-footer{background:var(--black);color:rgba(255,255,255,.72);border-top:1px solid rgba(255,255,255,.18);padding:32px 0;font-size:14px}
+.site-footer .wrap{max-width:1040px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 40px}
+.site-footer .logos img{height:48px;width:auto}
+.footer-info{text-align:right}
+.footer-line{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px 24px}
+.footer-fine{margin-top:6px;font-size:13px;color:rgba(255,255,255,.55)}
+.footer-info span{white-space:nowrap}
+.site-footer a{color:var(--white);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+
+@media (max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .hero{padding:44px 0 52px}
+  .hero p{font-size:17px}
+  .filters{position:static}
+  .frow{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .frow::-webkit-scrollbar{display:none}
+  .fb{flex:none}
+  .grid{grid-template-columns:1fr;gap:20px}
+  .mapleton{grid-template-columns:1fr;gap:6px;padding:20px}
+  .nb{flex:1 1 auto;text-align:center}
+  .site-footer .wrap,.footer-line{flex-direction:column;justify-content:center;align-items:center}
+  .footer-info{text-align:center}
+}
+</style>
+<link rel="canonical" href="https://willdobesh.github.io/live-like-a-local.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Will Dobesh | Utah County Real Estate">
+<meta property="og:title" content="Live Like a Local: Hidden Gems of South Utah County | Will Dobesh">
+<meta property="og:description" content="Things to do in Springville, Spanish Fork, Salem, Payson and Santaquin: canyon drives, hot springs, drive-ins, farm stands, museums and family parks, from local agent Will Dobesh.">
+<meta property="og:url" content="https://willdobesh.github.io/live-like-a-local.html">
+<meta property="og:image" content="https://willdobesh.github.io/share-live-like-a-local.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Live Like a Local: Hidden Gems of South Utah County | Will Dobesh">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Like a Local: Hidden Gems of South Utah County | Will Dobesh">
+<meta name="twitter:description" content="Things to do in Springville, Spanish Fork, Salem, Payson and Santaquin: canyon drives, hot springs, drive-ins, farm stands, museums and family parks, from local agent Will Dobesh.">
+<meta name="twitter:image" content="https://willdobesh.github.io/share-live-like-a-local.jpg">
+<script>
+/* Lead source tracking: remembers ?src=... from the link someone first used */
+(function(){try{var s=new URLSearchParams(location.search).get("src");if(s){s=s.replace(/[^a-z0-9_-]/gi,"").slice(0,40);if(!localStorage.getItem("wd_src"))localStorage.setItem("wd_src",s);localStorage.setItem("wd_src_last",s);}}catch(e){}})();
+</script>
+</head>
+<body>
+
+<!-- Site navigation (same on every page) -->
+<style>
+.sn-header{background:#000;color:#fff;position:relative;z-index:50;font-family:"DM Sans",Helvetica,Arial,sans-serif}
+.sn-wrap{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative}
+.sn-logo{display:block;flex:none}
+.sn-logo img{height:52px;width:auto;display:block}
+.sn-nav{display:flex;align-items:center;gap:12px}
+.sn-dd{position:relative}
+.sn-toggle{font:500 15px/1 "DM Sans",Helvetica,Arial,sans-serif;color:#E6AE37;background:transparent;border:1px solid rgba(230,174,55,.55);border-radius:999px;padding:11px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.sn-toggle:hover{border-color:#E6AE37}
+.sn-chev{width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.sn-toggle[aria-expanded="true"] .sn-chev{transform:translateY(2px) rotate(-135deg)}
+.sn-menu{position:absolute;right:0;top:calc(100% + 10px);width:300px;background:#fff;color:#000;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.28);padding:8px;display:none;text-align:left}
+.sn-menu.open{display:block}
+.sn-menu a{display:block;padding:12px 14px;border-radius:8px;text-decoration:none;color:#000;font-size:16px;font-weight:500;line-height:1.3}
+.sn-menu a small{display:block;margin-top:3px;color:rgba(0,0,0,.6);font-size:13px;font-weight:400}
+.sn-menu a:hover,.sn-menu a:focus-visible{background:#F5F3EF;outline:none}
+.sn-menu a[aria-current="page"]{box-shadow:inset 3px 0 0 #E6AE37;background:#FAF8F4}
+.sn-sep{border-top:1px solid rgba(0,0,0,.1);margin-top:6px;padding-top:6px}
+.sn-cta{display:inline-block;background:#E6AE37;color:#000;font-weight:700;font-size:15px;line-height:1;padding:12px 18px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.sn-cta:hover{background:#F2C065}
+.sn-cta[aria-current="page"]{background:#fff}
+.sn-toggle:focus-visible,.sn-cta:focus-visible{outline:3px solid #E6AE37;outline-offset:3px}
+@media (max-width:600px){
+  .sn-wrap{padding:12px 16px;gap:10px}
+  .sn-logo img{height:36px}
+  .sn-nav{gap:8px}
+  .sn-dd{position:static}
+  .sn-toggle{font-size:14px;padding:10px 12px;gap:8px}
+  .sn-cta{font-size:14px;padding:11px 14px}
+  .sn-menu{left:16px;right:16px;width:auto;top:calc(100% - 2px)}
+}
+@media (max-width:360px){.sn-logo img{height:30px}.sn-toggle-label{display:none}.sn-toggle::before{content:"Menu"}}
+@media print{.sn-header{display:none !important}}
+</style>
+<header class="sn-header">
+  <div class="sn-wrap">
+    <a class="sn-logo" href="index.html"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY2NyIgaGVpZ2h0PSI0MjYiIHZpZXdCb3g9IjAgMCAxNjY3IDQyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1M181KSI+CjxwYXRoIGQ9Ik0yMzAuMjg2IDEwOS4yMjVIMjA0Ljg0NFY5My4yMzVIMjc0LjI4OFYxMDkuMjI1SDI0OC43MjhWMTc2LjU2OUgyMzAuMjg2VjEwOS4yMjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzMzLjgxMSAxNDEuNzg4SDMwMS4zNjRWMTc2LjU2N0gyODMuMDM5VjkzLjIzMzhIMzAxLjM2NFYxMjUuMzNIMzMzLjgxMVY5My4yMzM4SDM1Mi4yNTJWMTc2LjU2N0gzMzMuODExVjE0MS43ODhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzY2LjcyMiA5My4yMzVINDI0LjQ5NlYxMDguMDU4SDM4NC44MTJWMTI2LjYxNkg0MjIuMTYxVjE0MS40MzlIMzg0LjgxMlYxNjEuNzQ3SDQyNi44MjlMNDI0Ljk2MiAxNzYuNTdIMzY2LjcyMlY5My4yMzVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjEwLjU2MiAyMDMuNDY1SDI0MC41NThDMjQ4LjU3MSAyMDMuNDY1IDI1NC45NTIgMjA0LjU3MyAyNTkuNjk5IDIwNi43OTFDMjY0LjQ0NCAyMDkuMDA3IDI2Ny44NjkgMjEyLjEyIDI2OS45NyAyMTYuMTI3QzI3Mi4wNzEgMjIwLjEzNSAyNzMuMTIxIDIyNC44NjIgMjczLjEyMSAyMzAuMzA5QzI3My4xMjEgMjM1LjkxIDI3Mi4wNTEgMjQwLjc5NSAyNjkuOTEyIDI0NC45NTZDMjY3Ljc3MSAyNDkuMTE5IDI2NC4zMjggMjUyLjM0OCAyNTkuNTgzIDI1NC42NDRDMjU0LjgzNSAyNTYuOTQgMjQ4LjUzMiAyNTguMDg3IDI0MC42NzUgMjU4LjA4N0gyMjguMzAzVjI4Ni43OThIMjEwLjU2MlYyMDMuNDY1Wk0yNTUuOTY0IDIzMC41NDJDMjU1Ljk2NCAyMjYuMjY0IDI1NC44NzQgMjIzLjEzMSAyNTIuNjk1IDIyMS4xNDdDMjUwLjUxNSAyMTkuMTYzIDI0Ni40NjkgMjE4LjE3MSAyNDAuNTU4IDIxOC4xNzFIMjI4LjMwM1YyNDMuMzc5SDI0MC42NzVDMjQ2LjY2NSAyNDMuMzc5IDI1MC43MTEgMjQyLjI3MiAyNTIuODEyIDI0MC4wNTRDMjU0LjkxMyAyMzcuODM3IDI1NS45NjQgMjM0LjY2NyAyNTUuOTY0IDIzMC41NDJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjgzLjk3MiAyMDMuNDY1SDM0MS43NDVWMjE4LjI4N0gzMDIuMDYyVjIzNi44NDZIMzM5LjQxMVYyNTEuNjY5SDMwMi4wNjJWMjcxLjk3N0gzNDQuMDc4TDM0Mi4yMTIgMjg2Ljc5OUgyODMuOTcyVjIwMy40NjZWMjAzLjQ2NVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zNTMuNzY4IDIwMy40NjVIMzg1LjE2NEMzOTMuMDIyIDIwMy40NjUgMzk5LjMwNCAyMDQuNTU1IDQwNC4wMTMgMjA2LjczM0M0MDguNzIgMjA4LjkxMyA0MTIuMTI0IDIxMS45MjYgNDE0LjIyNSAyMTUuNzc5QzQxNi4zMjYgMjE5LjYzMSA0MTcuMzc4IDIyNC4wMDggNDE3LjM3OCAyMjguOTA5QzQxNy4zNzggMjM0LjIwMiA0MTYuMjg3IDIzOC43OTEgNDE0LjEwOSAyNDIuNjgyQzQxMS45MjkgMjQ2LjU3MiA0MDguNTgzIDI0OS42ODMgNDA0LjA3MSAyNTIuMDE4TDQyMS40NjIgMjg2Ljc5OEg0MDIuMjA0TDM4Ny42MTUgMjU1Ljk4NkMzODYuOTkxIDI1NS45ODYgMzg2LjM2OCAyNTYuMDA3IDM4NS43NDcgMjU2LjA0NEMzODUuMTI1IDI1Ni4wODQgMzg0LjUwMiAyNTYuMTAyIDM4My44ODEgMjU2LjEwMkgzNzEuMjc1VjI4Ni43OThIMzUzLjc2OFYyMDMuNDY1Wk0zOTkuNjM2IDIyOS40OUMzOTkuNjM2IDIyNS42MDEgMzk4LjUwOCAyMjIuNjYzIDM5Ni4yNTMgMjIwLjY3OUMzOTMuOTk1IDIxOC42OTYgMzg5LjkwOSAyMTcuNzAyIDM4My45OTggMjE3LjcwMkgzNzEuMjc1VjI0MS45OEgzODQuNjk4QzM5MC40NTUgMjQxLjk4IDM5NC4zODUgMjQwLjkxMiAzOTYuNDg2IDIzOC43NjlDMzk4LjU4NyAyMzYuNjMxIDM5OS42MzcgMjMzLjUzOCAzOTkuNjM3IDIyOS40OUgzOTkuNjM2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQyOS43NDggMjAzLjQ2NUg0NjEuMTQ0QzQ2OS4wMDMgMjAzLjQ2NSA0NzUuMjg1IDIwNC41NTUgNDc5Ljk5MyAyMDYuNzMzQzQ4NC42OTkgMjA4LjkxMyA0ODguMTA1IDIxMS45MjYgNDkwLjIwNiAyMTUuNzc5QzQ5Mi4zMDcgMjE5LjYzMSA0OTMuMzU3IDIyNC4wMDggNDkzLjM1NyAyMjguOTA5QzQ5My4zNTcgMjM0LjIwMiA0OTIuMjY2IDIzOC43OTEgNDkwLjA4OSAyNDIuNjgyQzQ4Ny45MDkgMjQ2LjU3MiA0ODQuNTYyIDI0OS42ODMgNDgwLjA1MiAyNTIuMDE4TDQ5Ny40NDIgMjg2Ljc5OEg0NzguMTgzTDQ2My41OTQgMjU1Ljk4NkM0NjIuOTcxIDI1NS45ODYgNDYyLjM0OSAyNTYuMDA3IDQ2MS43MjggMjU2LjA0NEM0NjEuMTA0IDI1Ni4wODQgNDYwLjQ4MSAyNTYuMTAyIDQ1OS44NiAyNTYuMTAySDQ0Ny4yNTVWMjg2Ljc5OEg0MjkuNzQ4VjIwMy40NjVaTTQ3NS42MTcgMjI5LjQ5QzQ3NS42MTcgMjI1LjYwMSA0NzQuNDg3IDIyMi42NjMgNDcyLjIzMiAyMjAuNjc5QzQ2OS45NzQgMjE4LjY5NiA0NjUuODg5IDIxNy43MDIgNDU5Ljk3NyAyMTcuNzAySDQ0Ny4yNTVWMjQxLjk4SDQ2MC42NzdDNDY2LjQzNCAyNDEuOTggNDcwLjM2NiAyNDAuOTEyIDQ3Mi40NjcgMjM4Ljc2OUM0NzQuNTY2IDIzNi42MzEgNDc1LjYxOCAyMzMuNTM4IDQ3NS42MTggMjI5LjQ5SDQ3NS42MTdaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTIxLjgzNCAyNTMuNjUyTDQ5My43MDYgMjAzLjQ2NUg1MTMuNjY1TDUzMS4xNzIgMjM4LjgyOUw1NDkuMDMgMjAzLjQ2NUg1NjguMjg3TDU0MC4zOTMgMjUzLjY1MlYyODYuNzk4SDUyMS44MzVWMjUzLjY1Mkg1MjEuODM0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTU5Ni43NjQgMjQ1LjM2NEM1OTYuNzY0IDIzNi40OTMgNTk4LjI5OSAyMjguNzcyIDYwMS4zNzQgMjIyLjE5NkM2MDQuNDQ2IDIxNS42MjIgNjA4LjkzOSAyMTAuNTA2IDYxNC44NTQgMjA2Ljg0OUM2MjAuNzY4IDIwMy4xOTIgNjI3LjkyNiAyMDEuMzY0IDYzNi4zMzEgMjAxLjM2NEM2NDYuMjExIDIwMS4zNjQgNjUzLjk5MiAyMDMuNjggNjU5LjY3NCAyMDguMzA4QzY2NS4zNTIgMjEyLjkzOCA2NjguOTMzIDIxOS4yNiA2NzAuNDEgMjI3LjI3M0w2NTIuMjA0IDIyOS4yNTdDNjUxLjE5MSAyMjUuMzY4IDY0OS41MiAyMjIuMzMyIDY0Ny4xODUgMjIwLjE1M0M2NDQuODUgMjE3Ljk3NSA2NDEuMTkzIDIxNi44ODQgNjM2LjIxNCAyMTYuODg0QzYzMS4zMTIgMjE2Ljg4NCA2MjcuMzYyIDIxOC4wOTEgNjI0LjM2NiAyMjAuNTAyQzYyMS4zNyAyMjIuOTE0IDYxOS4xOTIgMjI2LjIyMSA2MTcuODMgMjMwLjQyM0M2MTYuNDY5IDIzNC42MjMgNjE1Ljc4OSAyMzkuNDg4IDYxNS43ODkgMjQ1LjAxMkM2MTUuNzg5IDI1NC4xMTYgNjE3LjU3OCAyNjEuMTE5IDYyMS4xNTggMjY2LjAyMUM2MjQuNzM2IDI3MC45MjEgNjMwLjQxNyAyNzMuMzc0IDYzOC4xOTggMjczLjM3NEM2NDQuNjU1IDI3My4zNzQgNjUwLjEwNCAyNzIuMDEyIDY1NC41NCAyNjkuMjg5VjI1NS42MzNINjM4LjMxNVYyNDEuMDQ0SDY3MS42OTVWMjc3LjQ1OUM2NjcuMjYgMjgxLjE5MyA2NjIuMDA4IDI4NC4wMzUgNjU1Ljk0IDI4NS45NzlDNjQ5Ljg3IDI4Ny45MjMgNjQzLjcyMyAyODguODk2IDYzNy40OTggMjg4Ljg5NkM2MjQuNTAzIDI4OC44OTYgNjE0LjQ2NSAyODUuMTAzIDYwNy4zODYgMjc3LjUxN0M2MDAuMzA1IDI2OS45MyA1OTYuNzY2IDI1OS4yMTQgNTk2Ljc2NiAyNDUuMzYyTDU5Ni43NjQgMjQ1LjM2NFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02ODQuMTgxIDIwMy40NjVINzE1LjU3N0M3MjMuNDM1IDIwMy40NjUgNzI5LjcxNyAyMDQuNTU1IDczNC40MjYgMjA2LjczM0M3MzkuMTMzIDIwOC45MTMgNzQyLjUzOCAyMTEuOTI2IDc0NC42MzggMjE1Ljc3OUM3NDYuNzM5IDIxOS42MzEgNzQ3Ljc5IDIyNC4wMDggNzQ3Ljc5IDIyOC45MDlDNzQ3Ljc5IDIzNC4yMDIgNzQ2LjY5OSAyMzguNzkxIDc0NC41MjIgMjQyLjY4MkM3NDIuMzQyIDI0Ni41NzIgNzM4Ljk5NiAyNDkuNjgzIDczNC40ODQgMjUyLjAxOEw3NTEuODc1IDI4Ni43OThINzMyLjYxN0w3MTguMDI4IDI1NS45ODZDNzE3LjQwNCAyNTUuOTg2IDcxNi43ODEgMjU2LjAwNyA3MTYuMTYgMjU2LjA0NEM3MTUuNTM4IDI1Ni4wODQgNzE0LjkxNSAyNTYuMTAyIDcxNC4yOTMgMjU2LjEwMkg3MDEuNjg4VjI4Ni43OThINjg0LjE4MVYyMDMuNDY1Wk03MzAuMDQ5IDIyOS40OUM3MzAuMDQ5IDIyNS42MDEgNzI4LjkyMSAyMjIuNjYzIDcyNi42NjQgMjIwLjY3OUM3MjQuNDA4IDIxOC42OTYgNzIwLjMyMiAyMTcuNzAyIDcxNC40MTEgMjE3LjcwMkg3MDEuNjg4VjI0MS45OEg3MTUuMTExQzcyMC44NjggMjQxLjk4IDcyNC43OTggMjQwLjkxMiA3MjYuODk5IDIzOC43NjlDNzI5IDIzNi42MzEgNzMwLjA1IDIzMy41MzggNzMwLjA1IDIyOS40OUg3MzAuMDQ5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTc1Ni4xOTQgMjQ1LjM2NEM3NTYuMTk0IDIzNi4wMjYgNzU3Ljg0NSAyMjguMDcyIDc2MS4xNTMgMjIxLjQ5NkM3NjQuNDYgMjE0LjkyMiA3NjkuMTQ4IDIwOS45MjMgNzc1LjIxOSAyMDYuNDk5Qzc4MS4yODggMjAzLjA3NiA3ODguNDA3IDIwMS4zNjQgNzk2LjU3NyAyMDEuMzY0QzgwNC43NDcgMjAxLjM2NCA4MTEuODI3IDIwMy4wNTYgODE3LjgxOSAyMDYuNDQxQzgyMy44MDkgMjA5LjgyNCA4MjguNDIxIDIxNC43NDcgODMxLjY1IDIyMS4yMDVDODM0Ljg3OCAyMjcuNjY1IDgzNi40OTMgMjM1LjUyMyA4MzYuNDkzIDI0NC43ODFDODM2LjQ5MyAyNTQuMTE4IDgzNC44NTggMjYyLjA3NiA4MzEuNTkxIDI2OC42NDlDODI4LjMyMiAyNzUuMjI1IDgyMy42OTIgMjgwLjI0NCA4MTcuNzAyIDI4My43MDVDODExLjcxIDI4Ny4xNjYgODA0LjU1MSAyODguODk5IDc5Ni4yMjYgMjg4Ljg5OUM3ODguMDU2IDI4OC44OTkgNzgwLjk3NSAyODcuMjA3IDc3NC45ODQgMjgzLjgyMkM3NjguOTkxIDI4MC40MzcgNzY0LjM2NCAyNzUuNTE3IDc2MS4wOTUgMjY5LjA1OEM3NTcuODI3IDI2Mi42MDEgNzU2LjE5NCAyNTQuNzAyIDc1Ni4xOTQgMjQ1LjM2NFpNNzc1LjMzNSAyNDUuMTMxQzc3NS4zMzUgMjUzLjg0NyA3NzcuMDg2IDI2MC42NzQgNzgwLjU4NyAyNjUuNjE1Qzc4NC4wODkgMjcwLjU1NyA3ODkuMzQxIDI3My4wMjYgNzk2LjM0NCAyNzMuMDI2QzgwMy4yNjggMjczLjAyNiA4MDguNSAyNzAuNTU3IDgxMi4wNDEgMjY1LjYxNUM4MTUuNTggMjYwLjY3NCA4MTcuMzUxIDI1My44NDcgODE3LjM1MSAyNDUuMTMxQzgxNy4zNTEgMjM2LjQxNSA4MTUuNTgxIDIyOS41OSA4MTIuMDQxIDIyNC42NDhDODA4LjUgMjE5LjcwNyA4MDMuMjY2IDIxNy4yMzcgNzk2LjM0NCAyMTcuMjM3Qzc4OS4zNDEgMjE3LjIzNyA3ODQuMDg5IDIxOS43MDcgNzgwLjU4NyAyMjQuNjQ4Qzc3Ny4wODYgMjI5LjU5IDc3NS4zMzUgMjM2LjQxOCA3NzUuMzM1IDI0NS4xMzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNODQ3LjQ2MyAyNTIuNjAxVjIwMy40NjVIODY1LjkwNFYyNTMuNDE4Qzg2NS45MDQgMjYwLjAzMyA4NjcuMTI5IDI2NC45NTUgODY5LjU4IDI2OC4xODJDODcyLjAzMiAyNzEuNDEzIDg3Ni4wMTkgMjczLjAyNiA4ODEuNTQ1IDI3My4wMjZDODg3LjIyMyAyNzMuMDI2IDg5MS4yMzIgMjcxLjQxMyA4OTMuNTY2IDI2OC4xODJDODk1LjkgMjY0Ljk1NiA4OTcuMDY3IDI2MC4wMzMgODk3LjA2NyAyNTMuNDE4VjIwMy40NjVIOTE1LjUwOFYyNTIuODMzQzkxNS41MDggMjY1LjA1MSA5MTIuNTcxIDI3NC4xMTUgOTA2LjY5NiAyODAuMDI5QzkwMC44MjIgMjg1Ljk0NCA4OTIuMzU5IDI4OC44OTkgODgxLjMxMSAyODguODk5Qzg3MC4yNjMgMjg4Ljg5OSA4NjEuODU5IDI4NS45NjIgODU2LjEwMiAyODAuMDg3Qzg1MC4zNDMgMjc0LjIxNCA4NDcuNDY1IDI2NS4wNTEgODQ3LjQ2NSAyNTIuNjAxSDg0Ny40NjNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOTI5LjE2MiAyMDMuNDY1SDk1OS4xNTdDOTY3LjE3MiAyMDMuNDY1IDk3My41NTIgMjA0LjU3MyA5NzguMyAyMDYuNzkxQzk4My4wNDQgMjA5LjAwNyA5ODYuNDcgMjEyLjEyIDk4OC41NzEgMjE2LjEyN0M5OTAuNjcxIDIyMC4xMzUgOTkxLjcyMiAyMjQuODYyIDk5MS43MjIgMjMwLjMwOUM5OTEuNzIyIDIzNS45MSA5OTAuNjUyIDI0MC43OTUgOTg4LjUxMiAyNDQuOTU2Qzk4Ni4zNzEgMjQ5LjExOSA5ODIuOTI3IDI1Mi4zNDggOTc4LjE4MiAyNTQuNjQ0Qzk3My40MzUgMjU2Ljk0IDk2Ny4xMzIgMjU4LjA4NyA5NTkuMjc0IDI1OC4wODdIOTQ2LjkwNFYyODYuNzk4SDkyOS4xNjJWMjAzLjQ2NVpNOTc0LjU2NCAyMzAuNTQyQzk3NC41NjQgMjI2LjI2NCA5NzMuNDczIDIyMy4xMzEgOTcxLjI5NiAyMjEuMTQ3Qzk2OS4xMTYgMjE5LjE2MyA5NjUuMDcgMjE4LjE3MSA5NTkuMTU3IDIxOC4xNzFIOTQ2LjkwNFYyNDMuMzc5SDk1OS4yNzRDOTY1LjI2NiAyNDMuMzc5IDk2OS4zMTIgMjQyLjI3MiA5NzEuNDEyIDI0MC4wNTRDOTczLjUxMyAyMzcuODM3IDk3NC41NjQgMjM0LjY2NyA5NzQuNTY0IDIzMC41NDJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTc3LjU2MSAxNzcuMDY4QzE3Ny41NjEgMTI4LjE1MyAxMzcuOTA5IDg4LjUwMDQgODguOTkzIDg4LjUwMDRDNDAuMDc3IDg4LjUwMDQgMC40MjI4NTIgMTI4LjE1MyAwLjQyMjg1MiAxNzcuMDY4QzAuNDIyODUyIDIwMy4yMDEgMTEuODExNSAyMjYuNjE5IDI5LjgxNTMgMjQyLjgyOEMyOS43Nzg5IDI0Mi44ODEgMjkuNzU2OSAyNDIuOTQgMjkuNzI0NSAyNDIuOTg5TDg4Ljk4MTMgMjkzLjYzMkwxNDcuODI0IDI0My4zNDFDMTQ3Ljc5NiAyNDMuMyAxNDcuNzcgMjQzLjI1OCAxNDcuNzQxIDI0My4yMjFDMTY1Ljk5MyAyMjYuOTk1IDE3Ny41NjEgMjAzLjQxMSAxNzcuNTYxIDE3Ny4wNjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTEwNi43IDQyNS44NTdWMC44NTcyMzlMMTEwMS42MSAwLjg1NzIzOVY0MjUuODU3SDExMDYuN1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNDcwLjE5IDIxNy45NTNDMTQ2Ni44OCAyMjAuMzk4IDE0NjUuMiAyMjQuMTM0IDE0NjUuMiAyMjguOTY0QzE0NjUuMiAyMzMuNzkzIDE0NjYuODQgMjM3LjE4NiAxNDcwLjEgMjM5LjUxNkMxNDczLjM5IDI0MS44NzUgMTQ3OC4zOSAyNDMuMDY5IDE0ODQuOTUgMjQzLjA2OUMxNDkzLjU3IDI0My4wNjkgMTQ5OS42NyAyNDEuMjE2IDE1MDMuNiAyMzcuNDAxQzE1MDUuNjMgMjM1LjQ1NCAxNTA2Ljk3IDIzMi4yMjcgMTUwNi45NyAyMjIuODA0VjIxNC4yMjdIMTQ4NC44NEMxNDc4LjQyIDIxNC4yMjcgMTQ3My40OSAyMTUuNTE1IDE0NzAuMTggMjE3Ljk1M0gxNDcwLjE5Wk0xMjI4Ljc0IDExNi41OFYzMDQuMzEzSDE2NjYuODNWMTE2LjU4SDEyMjguNzRaTTEzNjYuOCAxNjYuMzY4VjE3OC4zNjVMMTM2Ni4wOSAxNzguMzU3TDEzMjkuMzggMTc4LjExN0wxMzI5LjQyIDI1My42NjNWMjU0LjcyMUgxMzE3LjI0VjE2Ni4zNjhIMTM2Ni44Wk0xMzkzLjM3IDIzOC40OThDMTM5Ni42OCAyNDEuNTA3IDE0MDEuNzEgMjQyLjk2OSAxNDA4Ljc4IDI0Mi45NjlDMTQxOC4wNiAyNDIuOTY5IDE0MjQuNzcgMjM5LjkwNCAxNDI5LjI3IDIzMy41OTdMMTQyOS44IDIzMi44NTZMMTQzMC40NiAyMzMuNDg3TDE0MzguMDQgMjQwLjcwOEwxNDM4LjU2IDI0MS4yMDNMMTQzOC4xMSAyNDEuNzdDMTQzNC4yNSAyNDYuNzIxIDE0MzAgMjUwLjA4OCAxNDI1LjExIDI1Mi4wNzFDMTQyMC40IDI1My45MzEgMTQxNS40IDI1NC43MjQgMTQwOC4zOSAyNTQuNzI0QzEzOTYuNzcgMjU0LjcyNCAxMzg5LjAzIDI1Mi40ODcgMTM4NCAyNDcuNjg5QzEzNzkuMiAyNDMuMTEzIDEzNzYuOTkgMjM2LjI1MSAxMzc2Ljk5IDIyNi4wOTNWMTkyLjMwM0MxMzc2Ljk5IDE4NS43NTMgMTM3OC42NSAxODAuOTU0IDEzODIuNDEgMTc2Ljc1M0MxMzg3LjI1IDE3MS4zNDIgMTM5NS40NCAxNjcuNDIzIDE0MDIuNzkgMTY3LjAwMUMxNDA0LjM2IDE2Ni44NjggMTQwNi4wNCAxNjYuOCAxNDA3Ljc2IDE2Ni44QzE0MDkuOSAxNjYuOCAxNDExLjcyIDE2Ni44NTcgMTQxMy4zMyAxNjYuOTgyQzE0MjMuMDMgMTY3LjM4IDE0MjkuODMgMTY5LjkwMiAxNDM0Ljc0IDE3NC45MkMxNDM5LjAyIDE3OS4zMDkgMTQ0MC44NCAxODQuNDUxIDE0NDAuODQgMTkyLjE0NUMxNDQwLjg0IDIwMC40MzQgMTQzOC40OSAyMDYuMjg2IDE0MzMuNDMgMjEwLjYwNkMxNDI4LjI0IDIxNS4wMzcgMTQyMS4zNSAyMTcuMDYgMTQxMS43NSAyMTcuMDZIMTM4OC42VjIyNS4wNTNDMTM4OC42IDIzMS4xNzYgMTM5MC4xNSAyMzUuNTc2IDEzOTMuMzcgMjM4LjQ5OFpNMTUxOC41OCAyMjguNTlDMTUxOC41OCAyMzUuMTQ0IDE1MTYuOTIgMjM5LjkzOSAxNTEzLjE2IDI0NC4xNEMxNTA4LjMyIDI0OS41NTEgMTUwMC4xMyAyNTMuNDc0IDE0OTIuNzggMjUzLjg5NkMxNDkxLjIxIDI1NC4wMjUgMTQ4OS41NCAyNTQuMDk0IDE0ODcuODEgMjU0LjA5NEMxNDg1LjY3IDI1NC4wOTQgMTQ4My44NSAyNTQuMDMzIDE0ODIuMjQgMjUzLjkwN0MxNDcyLjU0IDI1My41MDkgMTQ2NS43MyAyNTAuOTg1IDE0NjAuODMgMjQ1Ljk2MUMxNDU2LjU1IDI0MS41NzMgMTQ1NC43MyAyMzYuNDIxIDE0NTQuNzMgMjI4LjcyOUMxNDU0LjczIDIyMC40MzYgMTQ1Ny4wOCAyMTQuNTYzIDE0NjIuMTQgMjEwLjI0M0MxNDY3LjMzIDIwNS44MTIgMTQ3NC4yMiAyMDMuNzQ2IDE0ODMuODIgMjAzLjc0NkgxNTA2Ljk3VjE5NS44NDNDMTUwNi45NyAxODkuNzE5IDE1MDUuNDIgMTg1LjMxOSAxNTAyLjIgMTgyLjM5NEMxNDk4Ljg5IDE3OS4zODUgMTQ5My44NiAxNzcuOTIyIDE0ODYuNzkgMTc3LjkyMkMxNDc3LjUxIDE3Ny45MjIgMTQ3MC44IDE4MC45ODggMTQ2Ni4zIDE4Ny4yOTRMMTQ2NS43NyAxODguMDM2TDE0NjUuMSAxODcuNDA1TDE0NTcuNTMgMTgwLjE4NEwxNDU3LjAxIDE3OS42ODlMMTQ1Ny40NSAxNzkuMTIyQzE0NjEuMzIgMTc0LjE3MSAxNDY1LjU2IDE3MC44MDQgMTQ3MC40NSAxNjguODIxQzE0NzUuMTYgMTY2Ljk2IDE0ODAuMTYgMTY2LjE2OCAxNDg3LjE4IDE2Ni4xNjhDMTQ5OC43OSAxNjYuMTY4IDE1MDYuNTQgMTY4LjQwNSAxNTExLjU3IDE3My4yMDNDMTUxNi4zNiAxNzcuNzc4IDE1MTguNTggMTg0LjY0MSAxNTE4LjU4IDE5NC43OTlWMjI4LjU4OUwxNTE4LjU4IDIyOC41OVpNMTU3OC4zMyAyNTQuNzIxSDE1MjguNzdWMjQyLjUzMUwxNTI5LjQ4IDI0Mi41MzVMMTU2Ni4xOSAyNDIuNzc1TDE1NjYuMTUgMTY3LjIzM1YxNjYuMzY5SDE1NzguMzNWMjU0LjcyM0wxNTc4LjMzIDI1NC43MjFaTTE0MjUuMzkgMjAyLjg5NkMxNDI4LjY5IDIwMC40NTEgMTQzMC4zNyAxOTYuNzYxIDE0MzAuMzcgMTkxLjkzMkMxNDMwLjM3IDE4Ny4xMDMgMTQyOC43MiAxODMuNzEgMTQyNS40NyAxODEuMzhDMTQyMi4xOCAxNzkuMDIxIDE0MTcuMTggMTc3LjgyNiAxNDEwLjYyIDE3Ny44MjZDMTQwMS45OSAxNzcuODI2IDEzOTUuOSAxNzkuNjc3IDEzOTEuOTYgMTgzLjQ5NUMxMzg5Ljk0IDE4NS40MzkgMTM4OC42IDE4OC42NjkgMTM4OC42IDE5OC4wOTJWMjA2LjU3OEgxNDEwLjczQzE0MTcuMTUgMjA2LjU3OCAxNDIyLjA4IDIwNS4zMzcgMTQyNS4zOSAyMDIuODk2WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNTNfNSI+CjxyZWN0IHdpZHRoPSIxNjY2LjQxIiBoZWlnaHQ9IjQyNSIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNDIyODUyIDAuODU3NDIyKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="The Perry Group | Real Brokerage"></a>
+    <nav class="sn-nav" aria-label="Site">
+      <div class="sn-dd">
+        <button type="button" class="sn-toggle" aria-expanded="false" aria-controls="sn-menu"><span class="sn-toggle-label">Resources</span><span class="sn-chev" aria-hidden="true"></span></button>
+        <div class="sn-menu" id="sn-menu">
+          <a href="index.html">Home<small>Start here: buying, building or selling</small></a>
+          <a href="new-construction.html">The 9 steps of building new<small>How buying from a builder works</small></a>
+          <a href="true-cost-calculator.html">True cost calculator<small>Your real price before you tour</small></a>
+          <a href="incentives.html">Builder incentives<small>What builders are offering right now</small></a>
+          <a href="before-you-build.html">Before You Build checklist<small>Track every step, print or save</small></a>
+          <a href="model-home-checklist.html">Model home checklist<small>Questions to ask the sales rep</small></a>
+          <a href="relocate.html">Moving to Utah<small>Relocation guide and 25 moving tips</small></a>
+          <a href="live-like-a-local.html" aria-current="page">Live like a local<small>Hidden gems of South County</small></a>
+          <div class="sn-sep"><a href="sell-first.html">Sell first or build first?<small>Count back from your move-in date</small></a>
+          <a href="home-value.html">What's my home worth?<small>For sellers: a real number from recent sales</small></a></div>
+        </div>
+      </div>
+      <a class="sn-cta" href="get-started.html">Get started</a>
+    </nav>
+  </div>
+</header>
+<script>
+(function(){
+  var t=document.querySelector('.sn-toggle'),m=document.getElementById('sn-menu');
+  if(!t||!m)return;
+  function set(o){m.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false');}
+  t.addEventListener('click',function(e){e.stopPropagation();set(!m.classList.contains('open'));});
+  document.addEventListener('click',function(e){if(!m.contains(e.target))set(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){set(false);t.focus();}});
+})();
+</script>
+<!-- End site navigation -->
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Hidden gems of South Utah County</p>
+    <h1>Live like <em>a local.</em></h1>
+    <p>The canyon drives, drive-ins, farm stands, museums and family spots between Springville and Santaquin that don't always make the travel guides. Filter by city or by what you're in the mood for.</p>
+    <p class="story">This guide started at the Springville Farmers Market. My family goes regularly, and last summer my two daughters ran a booth there all season selling crafts they made.</p>
+  </div>
+</section>
+
+<div class="filters" role="region" aria-label="Filter spots">
+  <div class="wrap">
+    <div class="frow" id="cityRow"><span class="flabel">City</span></div>
+    <div class="frow" id="typeRow"><span class="flabel">Type</span></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="count" id="count" aria-live="polite"></p>
+  <div class="grid" id="grid"></div>
+
+  <div class="mapleton">
+    <strong>What about Mapleton?</strong>
+    <p>Mapleton keeps business development limited, so it's mostly homes, a golf course, and trails that start from the same canyon. It's a quiet place to live, and everything on this list is a short drive away.</p>
+  </div>
+</main>
+
+<section class="next">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#9a6a0c">Like what you see?</p>
+    <h2>Picture yourself living here</h2>
+    <p>If you're thinking about moving to South County, start with the relocation guide, or tell me what you're looking for and I'll suggest a few areas to drive through.</p>
+    <div class="next-btns">
+      <a class="nb nb-black" href="relocate.html">Read the relocation guide &rarr;</a>
+      <a class="nb nb-line" href="get-started.html?from=live-like-a-local">Tell me about your move</a>
+    </div>
+    <p class="suggest">Know a hidden gem that should be on this list? <a href="sms:+18014007976?&amp;body=Hi%20Will%2C%20a%20hidden%20gem%20for%20your%20Live%20Like%20a%20Local%20list%3A%20">Text it to me</a>.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="logos"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY2NyIgaGVpZ2h0PSI0MjYiIHZpZXdCb3g9IjAgMCAxNjY3IDQyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1M181KSI+CjxwYXRoIGQ9Ik0yMzAuMjg2IDEwOS4yMjVIMjA0Ljg0NFY5My4yMzVIMjc0LjI4OFYxMDkuMjI1SDI0OC43MjhWMTc2LjU2OUgyMzAuMjg2VjEwOS4yMjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzMzLjgxMSAxNDEuNzg4SDMwMS4zNjRWMTc2LjU2N0gyODMuMDM5VjkzLjIzMzhIMzAxLjM2NFYxMjUuMzNIMzMzLjgxMVY5My4yMzM4SDM1Mi4yNTJWMTc2LjU2N0gzMzMuODExVjE0MS43ODhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzY2LjcyMiA5My4yMzVINDI0LjQ5NlYxMDguMDU4SDM4NC44MTJWMTI2LjYxNkg0MjIuMTYxVjE0MS40MzlIMzg0LjgxMlYxNjEuNzQ3SDQyNi44MjlMNDI0Ljk2MiAxNzYuNTdIMzY2LjcyMlY5My4yMzVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjEwLjU2MiAyMDMuNDY1SDI0MC41NThDMjQ4LjU3MSAyMDMuNDY1IDI1NC45NTIgMjA0LjU3MyAyNTkuNjk5IDIwNi43OTFDMjY0LjQ0NCAyMDkuMDA3IDI2Ny44NjkgMjEyLjEyIDI2OS45NyAyMTYuMTI3QzI3Mi4wNzEgMjIwLjEzNSAyNzMuMTIxIDIyNC44NjIgMjczLjEyMSAyMzAuMzA5QzI3My4xMjEgMjM1LjkxIDI3Mi4wNTEgMjQwLjc5NSAyNjkuOTEyIDI0NC45NTZDMjY3Ljc3MSAyNDkuMTE5IDI2NC4zMjggMjUyLjM0OCAyNTkuNTgzIDI1NC42NDRDMjU0LjgzNSAyNTYuOTQgMjQ4LjUzMiAyNTguMDg3IDI0MC42NzUgMjU4LjA4N0gyMjguMzAzVjI4Ni43OThIMjEwLjU2MlYyMDMuNDY1Wk0yNTUuOTY0IDIzMC41NDJDMjU1Ljk2NCAyMjYuMjY0IDI1NC44NzQgMjIzLjEzMSAyNTIuNjk1IDIyMS4xNDdDMjUwLjUxNSAyMTkuMTYzIDI0Ni40NjkgMjE4LjE3MSAyNDAuNTU4IDIxOC4xNzFIMjI4LjMwM1YyNDMuMzc5SDI0MC42NzVDMjQ2LjY2NSAyNDMuMzc5IDI1MC43MTEgMjQyLjI3MiAyNTIuODEyIDI0MC4wNTRDMjU0LjkxMyAyMzcuODM3IDI1NS45NjQgMjM0LjY2NyAyNTUuOTY0IDIzMC41NDJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjgzLjk3MiAyMDMuNDY1SDM0MS43NDVWMjE4LjI4N0gzMDIuMDYyVjIzNi44NDZIMzM5LjQxMVYyNTEuNjY5SDMwMi4wNjJWMjcxLjk3N0gzNDQuMDc4TDM0Mi4yMTIgMjg2Ljc5OUgyODMuOTcyVjIwMy40NjZWMjAzLjQ2NVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zNTMuNzY4IDIwMy40NjVIMzg1LjE2NEMzOTMuMDIyIDIwMy40NjUgMzk5LjMwNCAyMDQuNTU1IDQwNC4wMTMgMjA2LjczM0M0MDguNzIgMjA4LjkxMyA0MTIuMTI0IDIxMS45MjYgNDE0LjIyNSAyMTUuNzc5QzQxNi4zMjYgMjE5LjYzMSA0MTcuMzc4IDIyNC4wMDggNDE3LjM3OCAyMjguOTA5QzQxNy4zNzggMjM0LjIwMiA0MTYuMjg3IDIzOC43OTEgNDE0LjEwOSAyNDIuNjgyQzQxMS45MjkgMjQ2LjU3MiA0MDguNTgzIDI0OS42ODMgNDA0LjA3MSAyNTIuMDE4TDQyMS40NjIgMjg2Ljc5OEg0MDIuMjA0TDM4Ny42MTUgMjU1Ljk4NkMzODYuOTkxIDI1NS45ODYgMzg2LjM2OCAyNTYuMDA3IDM4NS43NDcgMjU2LjA0NEMzODUuMTI1IDI1Ni4wODQgMzg0LjUwMiAyNTYuMTAyIDM4My44ODEgMjU2LjEwMkgzNzEuMjc1VjI4Ni43OThIMzUzLjc2OFYyMDMuNDY1Wk0zOTkuNjM2IDIyOS40OUMzOTkuNjM2IDIyNS42MDEgMzk4LjUwOCAyMjIuNjYzIDM5Ni4yNTMgMjIwLjY3OUMzOTMuOTk1IDIxOC42OTYgMzg5LjkwOSAyMTcuNzAyIDM4My45OTggMjE3LjcwMkgzNzEuMjc1VjI0MS45OEgzODQuNjk4QzM5MC40NTUgMjQxLjk4IDM5NC4zODUgMjQwLjkxMiAzOTYuNDg2IDIzOC43NjlDMzk4LjU4NyAyMzYuNjMxIDM5OS42MzcgMjMzLjUzOCAzOTkuNjM3IDIyOS40OUgzOTkuNjM2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQyOS43NDggMjAzLjQ2NUg0NjEuMTQ0QzQ2OS4wMDMgMjAzLjQ2NSA0NzUuMjg1IDIwNC41NTUgNDc5Ljk5MyAyMDYuNzMzQzQ4NC42OTkgMjA4LjkxMyA0ODguMTA1IDIxMS45MjYgNDkwLjIwNiAyMTUuNzc5QzQ5Mi4zMDcgMjE5LjYzMSA0OTMuMzU3IDIyNC4wMDggNDkzLjM1NyAyMjguOTA5QzQ5My4zNTcgMjM0LjIwMiA0OTIuMjY2IDIzOC43OTEgNDkwLjA4OSAyNDIuNjgyQzQ4Ny45MDkgMjQ2LjU3MiA0ODQuNTYyIDI0OS42ODMgNDgwLjA1MiAyNTIuMDE4TDQ5Ny40NDIgMjg2Ljc5OEg0NzguMTgzTDQ2My41OTQgMjU1Ljk4NkM0NjIuOTcxIDI1NS45ODYgNDYyLjM0OSAyNTYuMDA3IDQ2MS43MjggMjU2LjA0NEM0NjEuMTA0IDI1Ni4wODQgNDYwLjQ4MSAyNTYuMTAyIDQ1OS44NiAyNTYuMTAySDQ0Ny4yNTVWMjg2Ljc5OEg0MjkuNzQ4VjIwMy40NjVaTTQ3NS42MTcgMjI5LjQ5QzQ3NS42MTcgMjI1LjYwMSA0NzQuNDg3IDIyMi42NjMgNDcyLjIzMiAyMjAuNjc5QzQ2OS45NzQgMjE4LjY5NiA0NjUuODg5IDIxNy43MDIgNDU5Ljk3NyAyMTcuNzAySDQ0Ny4yNTVWMjQxLjk4SDQ2MC42NzdDNDY2LjQzNCAyNDEuOTggNDcwLjM2NiAyNDAuOTEyIDQ3Mi40NjcgMjM4Ljc2OUM0NzQuNTY2IDIzNi42MzEgNDc1LjYxOCAyMzMuNTM4IDQ3NS42MTggMjI5LjQ5SDQ3NS42MTdaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTIxLjgzNCAyNTMuNjUyTDQ5My43MDYgMjAzLjQ2NUg1MTMuNjY1TDUzMS4xNzIgMjM4LjgyOUw1NDkuMDMgMjAzLjQ2NUg1NjguMjg3TDU0MC4zOTMgMjUzLjY1MlYyODYuNzk4SDUyMS44MzVWMjUzLjY1Mkg1MjEuODM0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTU5Ni43NjQgMjQ1LjM2NEM1OTYuNzY0IDIzNi40OTMgNTk4LjI5OSAyMjguNzcyIDYwMS4zNzQgMjIyLjE5NkM2MDQuNDQ2IDIxNS42MjIgNjA4LjkzOSAyMTAuNTA2IDYxNC44NTQgMjA2Ljg0OUM2MjAuNzY4IDIwMy4xOTIgNjI3LjkyNiAyMDEuMzY0IDYzNi4zMzEgMjAxLjM2NEM2NDYuMjExIDIwMS4zNjQgNjUzLjk5MiAyMDMuNjggNjU5LjY3NCAyMDguMzA4QzY2NS4zNTIgMjEyLjkzOCA2NjguOTMzIDIxOS4yNiA2NzAuNDEgMjI3LjI3M0w2NTIuMjA0IDIyOS4yNTdDNjUxLjE5MSAyMjUuMzY4IDY0OS41MiAyMjIuMzMyIDY0Ny4xODUgMjIwLjE1M0M2NDQuODUgMjE3Ljk3NSA2NDEuMTkzIDIxNi44ODQgNjM2LjIxNCAyMTYuODg0QzYzMS4zMTIgMjE2Ljg4NCA2MjcuMzYyIDIxOC4wOTEgNjI0LjM2NiAyMjAuNTAyQzYyMS4zNyAyMjIuOTE0IDYxOS4xOTIgMjI2LjIyMSA2MTcuODMgMjMwLjQyM0M2MTYuNDY5IDIzNC42MjMgNjE1Ljc4OSAyMzkuNDg4IDYxNS43ODkgMjQ1LjAxMkM2MTUuNzg5IDI1NC4xMTYgNjE3LjU3OCAyNjEuMTE5IDYyMS4xNTggMjY2LjAyMUM2MjQuNzM2IDI3MC45MjEgNjMwLjQxNyAyNzMuMzc0IDYzOC4xOTggMjczLjM3NEM2NDQuNjU1IDI3My4zNzQgNjUwLjEwNCAyNzIuMDEyIDY1NC41NCAyNjkuMjg5VjI1NS42MzNINjM4LjMxNVYyNDEuMDQ0SDY3MS42OTVWMjc3LjQ1OUM2NjcuMjYgMjgxLjE5MyA2NjIuMDA4IDI4NC4wMzUgNjU1Ljk0IDI4NS45NzlDNjQ5Ljg3IDI4Ny45MjMgNjQzLjcyMyAyODguODk2IDYzNy40OTggMjg4Ljg5NkM2MjQuNTAzIDI4OC44OTYgNjE0LjQ2NSAyODUuMTAzIDYwNy4zODYgMjc3LjUxN0M2MDAuMzA1IDI2OS45MyA1OTYuNzY2IDI1OS4yMTQgNTk2Ljc2NiAyNDUuMzYyTDU5Ni43NjQgMjQ1LjM2NFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02ODQuMTgxIDIwMy40NjVINzE1LjU3N0M3MjMuNDM1IDIwMy40NjUgNzI5LjcxNyAyMDQuNTU1IDczNC40MjYgMjA2LjczM0M3MzkuMTMzIDIwOC45MTMgNzQyLjUzOCAyMTEuOTI2IDc0NC42MzggMjE1Ljc3OUM3NDYuNzM5IDIxOS42MzEgNzQ3Ljc5IDIyNC4wMDggNzQ3Ljc5IDIyOC45MDlDNzQ3Ljc5IDIzNC4yMDIgNzQ2LjY5OSAyMzguNzkxIDc0NC41MjIgMjQyLjY4MkM3NDIuMzQyIDI0Ni41NzIgNzM4Ljk5NiAyNDkuNjgzIDczNC40ODQgMjUyLjAxOEw3NTEuODc1IDI4Ni43OThINzMyLjYxN0w3MTguMDI4IDI1NS45ODZDNzE3LjQwNCAyNTUuOTg2IDcxNi43ODEgMjU2LjAwNyA3MTYuMTYgMjU2LjA0NEM3MTUuNTM4IDI1Ni4wODQgNzE0LjkxNSAyNTYuMTAyIDcxNC4yOTMgMjU2LjEwMkg3MDEuNjg4VjI4Ni43OThINjg0LjE4MVYyMDMuNDY1Wk03MzAuMDQ5IDIyOS40OUM3MzAuMDQ5IDIyNS42MDEgNzI4LjkyMSAyMjIuNjYzIDcyNi42NjQgMjIwLjY3OUM3MjQuNDA4IDIxOC42OTYgNzIwLjMyMiAyMTcuNzAyIDcxNC40MTEgMjE3LjcwMkg3MDEuNjg4VjI0MS45OEg3MTUuMTExQzcyMC44NjggMjQxLjk4IDcyNC43OTggMjQwLjkxMiA3MjYuODk5IDIzOC43NjlDNzI5IDIzNi42MzEgNzMwLjA1IDIzMy41MzggNzMwLjA1IDIyOS40OUg3MzAuMDQ5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTc1Ni4xOTQgMjQ1LjM2NEM3NTYuMTk0IDIzNi4wMjYgNzU3Ljg0NSAyMjguMDcyIDc2MS4xNTMgMjIxLjQ5NkM3NjQuNDYgMjE0LjkyMiA3NjkuMTQ4IDIwOS45MjMgNzc1LjIxOSAyMDYuNDk5Qzc4MS4yODggMjAzLjA3NiA3ODguNDA3IDIwMS4zNjQgNzk2LjU3NyAyMDEuMzY0QzgwNC43NDcgMjAxLjM2NCA4MTEuODI3IDIwMy4wNTYgODE3LjgxOSAyMDYuNDQxQzgyMy44MDkgMjA5LjgyNCA4MjguNDIxIDIxNC43NDcgODMxLjY1IDIyMS4yMDVDODM0Ljg3OCAyMjcuNjY1IDgzNi40OTMgMjM1LjUyMyA4MzYuNDkzIDI0NC43ODFDODM2LjQ5MyAyNTQuMTE4IDgzNC44NTggMjYyLjA3NiA4MzEuNTkxIDI2OC42NDlDODI4LjMyMiAyNzUuMjI1IDgyMy42OTIgMjgwLjI0NCA4MTcuNzAyIDI4My43MDVDODExLjcxIDI4Ny4xNjYgODA0LjU1MSAyODguODk5IDc5Ni4yMjYgMjg4Ljg5OUM3ODguMDU2IDI4OC44OTkgNzgwLjk3NSAyODcuMjA3IDc3NC45ODQgMjgzLjgyMkM3NjguOTkxIDI4MC40MzcgNzY0LjM2NCAyNzUuNTE3IDc2MS4wOTUgMjY5LjA1OEM3NTcuODI3IDI2Mi42MDEgNzU2LjE5NCAyNTQuNzAyIDc1Ni4xOTQgMjQ1LjM2NFpNNzc1LjMzNSAyNDUuMTMxQzc3NS4zMzUgMjUzLjg0NyA3NzcuMDg2IDI2MC42NzQgNzgwLjU4NyAyNjUuNjE1Qzc4NC4wODkgMjcwLjU1NyA3ODkuMzQxIDI3My4wMjYgNzk2LjM0NCAyNzMuMDI2QzgwMy4yNjggMjczLjAyNiA4MDguNSAyNzAuNTU3IDgxMi4wNDEgMjY1LjYxNUM4MTUuNTggMjYwLjY3NCA4MTcuMzUxIDI1My44NDcgODE3LjM1MSAyNDUuMTMxQzgxNy4zNTEgMjM2LjQxNSA4MTUuNTgxIDIyOS41OSA4MTIuMDQxIDIyNC42NDhDODA4LjUgMjE5LjcwNyA4MDMuMjY2IDIxNy4yMzcgNzk2LjM0NCAyMTcuMjM3Qzc4OS4zNDEgMjE3LjIzNyA3ODQuMDg5IDIxOS43MDcgNzgwLjU4NyAyMjQuNjQ4Qzc3Ny4wODYgMjI5LjU5IDc3NS4zMzUgMjM2LjQxOCA3NzUuMzM1IDI0NS4xMzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNODQ3LjQ2MyAyNTIuNjAxVjIwMy40NjVIODY1LjkwNFYyNTMuNDE4Qzg2NS45MDQgMjYwLjAzMyA4NjcuMTI5IDI2NC45NTUgODY5LjU4IDI2OC4xODJDODcyLjAzMiAyNzEuNDEzIDg3Ni4wMTkgMjczLjAyNiA4ODEuNTQ1IDI3My4wMjZDODg3LjIyMyAyNzMuMDI2IDg5MS4yMzIgMjcxLjQxMyA4OTMuNTY2IDI2OC4xODJDODk1LjkgMjY0Ljk1NiA4OTcuMDY3IDI2MC4wMzMgODk3LjA2NyAyNTMuNDE4VjIwMy40NjVIOTE1LjUwOFYyNTIuODMzQzkxNS41MDggMjY1LjA1MSA5MTIuNTcxIDI3NC4xMTUgOTA2LjY5NiAyODAuMDI5QzkwMC44MjIgMjg1Ljk0NCA4OTIuMzU5IDI4OC44OTkgODgxLjMxMSAyODguODk5Qzg3MC4yNjMgMjg4Ljg5OSA4NjEuODU5IDI4NS45NjIgODU2LjEwMiAyODAuMDg3Qzg1MC4zNDMgMjc0LjIxNCA4NDcuNDY1IDI2NS4wNTEgODQ3LjQ2NSAyNTIuNjAxSDg0Ny40NjNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOTI5LjE2MiAyMDMuNDY1SDk1OS4xNTdDOTY3LjE3MiAyMDMuNDY1IDk3My41NTIgMjA0LjU3MyA5NzguMyAyMDYuNzkxQzk4My4wNDQgMjA5LjAwNyA5ODYuNDcgMjEyLjEyIDk4OC41NzEgMjE2LjEyN0M5OTAuNjcxIDIyMC4xMzUgOTkxLjcyMiAyMjQuODYyIDk5MS43MjIgMjMwLjMwOUM5OTEuNzIyIDIzNS45MSA5OTAuNjUyIDI0MC43OTUgOTg4LjUxMiAyNDQuOTU2Qzk4Ni4zNzEgMjQ5LjExOSA5ODIuOTI3IDI1Mi4zNDggOTc4LjE4MiAyNTQuNjQ0Qzk3My40MzUgMjU2Ljk0IDk2Ny4xMzIgMjU4LjA4NyA5NTkuMjc0IDI1OC4wODdIOTQ2LjkwNFYyODYuNzk4SDkyOS4xNjJWMjAzLjQ2NVpNOTc0LjU2NCAyMzAuNTQyQzk3NC41NjQgMjI2LjI2NCA5NzMuNDczIDIyMy4xMzEgOTcxLjI5NiAyMjEuMTQ3Qzk2OS4xMTYgMjE5LjE2MyA5NjUuMDcgMjE4LjE3MSA5NTkuMTU3IDIxOC4xNzFIOTQ2LjkwNFYyNDMuMzc5SDk1OS4yNzRDOTY1LjI2NiAyNDMuMzc5IDk2OS4zMTIgMjQyLjI3MiA5NzEuNDEyIDI0MC4wNTRDOTczLjUxMyAyMzcuODM3IDk3NC41NjQgMjM0LjY2NyA5NzQuNTY0IDIzMC41NDJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTc3LjU2MSAxNzcuMDY4QzE3Ny41NjEgMTI4LjE1MyAxMzcuOTA5IDg4LjUwMDQgODguOTkzIDg4LjUwMDRDNDAuMDc3IDg4LjUwMDQgMC40MjI4NTIgMTI4LjE1MyAwLjQyMjg1MiAxNzcuMDY4QzAuNDIyODUyIDIwMy4yMDEgMTEuODExNSAyMjYuNjE5IDI5LjgxNTMgMjQyLjgyOEMyOS43Nzg5IDI0Mi44ODEgMjkuNzU2OSAyNDIuOTQgMjkuNzI0NSAyNDIuOTg5TDg4Ljk4MTMgMjkzLjYzMkwxNDcuODI0IDI0My4zNDFDMTQ3Ljc5NiAyNDMuMyAxNDcuNzcgMjQzLjI1OCAxNDcuNzQxIDI0My4yMjFDMTY1Ljk5MyAyMjYuOTk1IDE3Ny41NjEgMjAzLjQxMSAxNzcuNTYxIDE3Ny4wNjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTEwNi43IDQyNS44NTdWMC44NTcyMzlMMTEwMS42MSAwLjg1NzIzOVY0MjUuODU3SDExMDYuN1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNDcwLjE5IDIxNy45NTNDMTQ2Ni44OCAyMjAuMzk4IDE0NjUuMiAyMjQuMTM0IDE0NjUuMiAyMjguOTY0QzE0NjUuMiAyMzMuNzkzIDE0NjYuODQgMjM3LjE4NiAxNDcwLjEgMjM5LjUxNkMxNDczLjM5IDI0MS44NzUgMTQ3OC4zOSAyNDMuMDY5IDE0ODQuOTUgMjQzLjA2OUMxNDkzLjU3IDI0My4wNjkgMTQ5OS42NyAyNDEuMjE2IDE1MDMuNiAyMzcuNDAxQzE1MDUuNjMgMjM1LjQ1NCAxNTA2Ljk3IDIzMi4yMjcgMTUwNi45NyAyMjIuODA0VjIxNC4yMjdIMTQ4NC44NEMxNDc4LjQyIDIxNC4yMjcgMTQ3My40OSAyMTUuNTE1IDE0NzAuMTggMjE3Ljk1M0gxNDcwLjE5Wk0xMjI4Ljc0IDExNi41OFYzMDQuMzEzSDE2NjYuODNWMTE2LjU4SDEyMjguNzRaTTEzNjYuOCAxNjYuMzY4VjE3OC4zNjVMMTM2Ni4wOSAxNzguMzU3TDEzMjkuMzggMTc4LjExN0wxMzI5LjQyIDI1My42NjNWMjU0LjcyMUgxMzE3LjI0VjE2Ni4zNjhIMTM2Ni44Wk0xMzkzLjM3IDIzOC40OThDMTM5Ni42OCAyNDEuNTA3IDE0MDEuNzEgMjQyLjk2OSAxNDA4Ljc4IDI0Mi45NjlDMTQxOC4wNiAyNDIuOTY5IDE0MjQuNzcgMjM5LjkwNCAxNDI5LjI3IDIzMy41OTdMMTQyOS44IDIzMi44NTZMMTQzMC40NiAyMzMuNDg3TDE0MzguMDQgMjQwLjcwOEwxNDM4LjU2IDI0MS4yMDNMMTQzOC4xMSAyNDEuNzdDMTQzNC4yNSAyNDYuNzIxIDE0MzAgMjUwLjA4OCAxNDI1LjExIDI1Mi4wNzFDMTQyMC40IDI1My45MzEgMTQxNS40IDI1NC43MjQgMTQwOC4zOSAyNTQuNzI0QzEzOTYuNzcgMjU0LjcyNCAxMzg5LjAzIDI1Mi40ODcgMTM4NCAyNDcuNjg5QzEzNzkuMiAyNDMuMTEzIDEzNzYuOTkgMjM2LjI1MSAxMzc2Ljk5IDIyNi4wOTNWMTkyLjMwM0MxMzc2Ljk5IDE4NS43NTMgMTM3OC42NSAxODAuOTU0IDEzODIuNDEgMTc2Ljc1M0MxMzg3LjI1IDE3MS4zNDIgMTM5NS40NCAxNjcuNDIzIDE0MDIuNzkgMTY3LjAwMUMxNDA0LjM2IDE2Ni44NjggMTQwNi4wNCAxNjYuOCAxNDA3Ljc2IDE2Ni44QzE0MDkuOSAxNjYuOCAxNDExLjcyIDE2Ni44NTcgMTQxMy4zMyAxNjYuOTgyQzE0MjMuMDMgMTY3LjM4IDE0MjkuODMgMTY5LjkwMiAxNDM0Ljc0IDE3NC45MkMxNDM5LjAyIDE3OS4zMDkgMTQ0MC44NCAxODQuNDUxIDE0NDAuODQgMTkyLjE0NUMxNDQwLjg0IDIwMC40MzQgMTQzOC40OSAyMDYuMjg2IDE0MzMuNDMgMjEwLjYwNkMxNDI4LjI0IDIxNS4wMzcgMTQyMS4zNSAyMTcuMDYgMTQxMS43NSAyMTcuMDZIMTM4OC42VjIyNS4wNTNDMTM4OC42IDIzMS4xNzYgMTM5MC4xNSAyMzUuNTc2IDEzOTMuMzcgMjM4LjQ5OFpNMTUxOC41OCAyMjguNTlDMTUxOC41OCAyMzUuMTQ0IDE1MTYuOTIgMjM5LjkzOSAxNTEzLjE2IDI0NC4xNEMxNTA4LjMyIDI0OS41NTEgMTUwMC4xMyAyNTMuNDc0IDE0OTIuNzggMjUzLjg5NkMxNDkxLjIxIDI1NC4wMjUgMTQ4OS41NCAyNTQuMDk0IDE0ODcuODEgMjU0LjA5NEMxNDg1LjY3IDI1NC4wOTQgMTQ4My44NSAyNTQuMDMzIDE0ODIuMjQgMjUzLjkwN0MxNDcyLjU0IDI1My41MDkgMTQ2NS43MyAyNTAuOTg1IDE0NjAuODMgMjQ1Ljk2MUMxNDU2LjU1IDI0MS41NzMgMTQ1NC43MyAyMzYuNDIxIDE0NTQuNzMgMjI4LjcyOUMxNDU0LjczIDIyMC40MzYgMTQ1Ny4wOCAyMTQuNTYzIDE0NjIuMTQgMjEwLjI0M0MxNDY3LjMzIDIwNS44MTIgMTQ3NC4yMiAyMDMuNzQ2IDE0ODMuODIgMjAzLjc0NkgxNTA2Ljk3VjE5NS44NDNDMTUwNi45NyAxODkuNzE5IDE1MDUuNDIgMTg1LjMxOSAxNTAyLjIgMTgyLjM5NEMxNDk4Ljg5IDE3OS4zODUgMTQ5My44NiAxNzcuOTIyIDE0ODYuNzkgMTc3LjkyMkMxNDc3LjUxIDE3Ny45MjIgMTQ3MC44IDE4MC45ODggMTQ2Ni4zIDE4Ny4yOTRMMTQ2NS43NyAxODguMDM2TDE0NjUuMSAxODcuNDA1TDE0NTcuNTMgMTgwLjE4NEwxNDU3LjAxIDE3OS42ODlMMTQ1Ny40NSAxNzkuMTIyQzE0NjEuMzIgMTc0LjE3MSAxNDY1LjU2IDE3MC44MDQgMTQ3MC40NSAxNjguODIxQzE0NzUuMTYgMTY2Ljk2IDE0ODAuMTYgMTY2LjE2OCAxNDg3LjE4IDE2Ni4xNjhDMTQ5OC43OSAxNjYuMTY4IDE1MDYuNTQgMTY4LjQwNSAxNTExLjU3IDE3My4yMDNDMTUxNi4zNiAxNzcuNzc4IDE1MTguNTggMTg0LjY0MSAxNTE4LjU4IDE5NC43OTlWMjI4LjU4OUwxNTE4LjU4IDIyOC41OVpNMTU3OC4zMyAyNTQuNzIxSDE1MjguNzdWMjQyLjUzMUwxNTI5LjQ4IDI0Mi41MzVMMTU2Ni4xOSAyNDIuNzc1TDE1NjYuMTUgMTY3LjIzM1YxNjYuMzY5SDE1NzguMzNWMjU0LjcyM0wxNTc4LjMzIDI1NC43MjFaTTE0MjUuMzkgMjAyLjg5NkMxNDI4LjY5IDIwMC40NTEgMTQzMC4zNyAxOTYuNzYxIDE0MzAuMzcgMTkxLjkzMkMxNDMwLjM3IDE4Ny4xMDMgMTQyOC43MiAxODMuNzEgMTQyNS40NyAxODEuMzhDMTQyMi4xOCAxNzkuMDIxIDE0MTcuMTggMTc3LjgyNiAxNDEwLjYyIDE3Ny44MjZDMTQwMS45OSAxNzcuODI2IDEzOTUuOSAxNzkuNjc3IDEzOTEuOTYgMTgzLjQ5NUMxMzg5Ljk0IDE4NS40MzkgMTM4OC42IDE4OC42NjkgMTM4OC42IDE5OC4wOTJWMjA2LjU3OEgxNDEwLjczQzE0MTcuMTUgMjA2LjU3OCAxNDIyLjA4IDIwNS4zMzcgMTQyNS4zOSAyMDIuODk2WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zNTNfNSI+CjxyZWN0IHdpZHRoPSIxNjY2LjQxIiBoZWlnaHQ9IjQyNSIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNDIyODUyIDAuODU3NDIyKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="The Perry Group and Real Brokerage"></div>
+    <div class="footer-info">
+      <div class="footer-line">
+        <span>Will Dobesh | The Perry Group | Real Broker LLC</span>
+        <span><a href="tel:+18014007976">801.400.7976</a></span>
+        <span><a href="mailto:will.dobesh@theperry.group">will.dobesh@theperry.group</a></span>
+      </div>
+      <div class="footer-fine">Equal Housing Opportunity. Hours, fees and events change, so check with each spot before you go.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== Spots: add, edit or remove here ===== */
+/* photo: file name in "New Construction Checklist/Marketing 2026/". Leave as is until you upload it; a clean black card shows instead. */
+var SPOTS=[
+ {
+  "slug": "nebo-loop",
+  "name": "Nebo Loop Scenic Byway",
+  "city": "Payson",
+  "type": "outdoors",
+  "text": "A paved mountain drive that climbs out of Payson Canyon with big views of Utah Valley and Mount Nebo. Go in the fall when the aspens turn gold, and plan stops at the overlooks, picnic areas and trailheads along the way.",
+  "q": "Nebo Loop Scenic Byway Payson UT",
+  "mine": ""
+ },
+ {
+  "slug": "payson-lakes",
+  "name": "Payson Lakes",
+  "city": "Payson",
+  "type": "outdoors",
+  "text": "A small mountain lake up Payson Canyon, surrounded by pines. Good for fishing, kayaking, a picnic, or an easy walk around the water, with hiking trails close by.",
+  "q": "Payson Lakes Utah",
+  "mine": ""
+ },
+ {
+  "slug": "dripping-rock",
+  "name": "Dripping Rock",
+  "city": "Spanish Fork",
+  "type": "outdoors",
+  "text": "A short, easy walk along the Spanish Fork River to a rock overhang where water seeps through and drips into a pool below. Stroller and bike friendly, and a quick, cool stop right off the canyon road.",
+  "q": "Dripping Rock Spanish Fork Canyon UT",
+  "mine": ""
+ },
+ {
+  "slug": "diamond-fork",
+  "name": "Diamond Fork Hot Springs",
+  "city": "Spanish Fork",
+  "type": "outdoors",
+  "text": "A hike up Fifth Water Creek in Diamond Fork Canyon ends at a series of natural hot spring pools, each a different temperature, with waterfalls running between them. Open year-round, and especially pretty with snow on the ground.",
+  "q": "Diamond Fork Hot Springs trailhead UT",
+  "mine": ""
+ },
+ {
+  "slug": "hobble-creek",
+  "name": "Hobble Creek Canyon picnic areas",
+  "city": "Springville",
+  "type": "outdoors",
+  "text": "Up the canyon east of Springville, parks like Kelly's Grove and Jolley's Ranch have creekside picnic tables, walking trails and campgrounds. Usually quieter than the busier Nebo Loop spots.",
+  "q": "Kelly's Grove Hobble Creek Canyon Springville UT",
+  "mine": ""
+ },
+ {
+  "slug": "the-barn",
+  "name": "The Barn",
+  "city": "Spanish Fork",
+  "type": "local",
+  "text": "A family-owned market from Wall Brothers Orchards with local produce, meats and BYU Creamery ice cream. Get the seasonal cider ice cream shake.",
+  "q": "The Barn Wall Brothers Orchards Spanish Fork UT",
+  "mine": "Whenever I have clients relocating here, it's one of the first places I send them for a family outing."
+ },
+ {
+  "slug": "glades",
+  "name": "Glade's Drive Inn",
+  "city": "Spanish Fork",
+  "type": "local",
+  "text": "A Spanish Fork drive-in classic with old-fashioned burgers, shakes and its own white fry sauce. People come for the fries and stay for the small-town feel.",
+  "q": "Glade's Drive Inn Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "barrys",
+  "name": "Barry's Parkview Drive Inn",
+  "city": "Spanish Fork",
+  "type": "local",
+  "text": "A long-time Spanish Fork drive-in for burgers, fries and shakes. An easy summer evening with the family.",
+  "q": "Barry's Parkview Drive Inn Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "gingers",
+  "name": "Christopher's Herb Shop and Ginger's Garden Cafe",
+  "city": "Springville",
+  "type": "local",
+  "text": "A vegan cafe on Main Street that makes almost everything from scratch with organic, whole foods. Worth a stop whether you're vegan or just want something fresh, and they cater too.",
+  "q": "Ginger's Garden Cafe Springville UT",
+  "mine": ""
+ },
+ {
+  "slug": "rowleys",
+  "name": "Rowley's Red Barn",
+  "city": "Santaquin",
+  "type": "local",
+  "text": "Part country store, part family farm outing. Fresh fruit, homemade ice cream and bakery treats, plus a pumpkin patch, corn maze and wagon rides in the fall.",
+  "q": "Rowley's Red Barn Santaquin UT",
+  "mine": ""
+ },
+ {
+  "slug": "adventure-heights",
+  "name": "Adventure Heights All-Abilities Park",
+  "city": "Spanish Fork",
+  "type": "family",
+  "text": "An all-abilities playground built so every kid can play: a huge treehouse with a tall slide, a splash pad, wheelchair-accessible swings and merry-go-round, and a sensory garden. Plenty of families outside Spanish Fork still haven't found it.",
+  "q": "Adventure Heights Park Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "bartholomew",
+  "name": "Wayne Bartholomew Family Park",
+  "city": "Springville",
+  "type": "family",
+  "text": "A swimming pond with a sandy beach at the mouth of Hobble Creek Canyon. Kids can splash or paddle a kayak, and there's grass and pavilions for picnics. Newcomers are usually surprised to find a beach in the mountains. Check Springville City's site for current entry fees.",
+  "q": "Wayne Bartholomew Family Park Springville UT",
+  "mine": ""
+ },
+ {
+  "slug": "salem-pond",
+  "name": "Salem Pond and Knoll Park",
+  "city": "Salem",
+  "type": "family",
+  "text": "A spring-fed pond in the middle of Salem with fishing, ducks to feed, playgrounds and walking bridges. In winter the city lights it up for Pond Town Christmas.",
+  "q": "Salem Pond Salem UT",
+  "mine": ""
+ },
+ {
+  "slug": "farmers-market",
+  "name": "Springville Farmers Market",
+  "city": "Springville",
+  "type": "family",
+  "text": "Once Art City Days wraps up in early June, Springville hosts its farmers market every Monday from 5 to 9 pm, with food trucks, produce and handmade goods. There's even a section where kids run their own booths.",
+  "q": "Springville Farmers Market Springville UT",
+  "mine": "This market is what inspired this guide. My family goes regularly, and last summer my two daughters ran a booth there selling crafts they made."
+ },
+ {
+  "slug": "cherry-hill",
+  "name": "Cherry Hill Farms",
+  "city": "Santaquin",
+  "type": "family",
+  "text": "A Santaquin farm known for U-pick peaches, apples and cherries in the summer. They also host classes and events, and the orchards make a great backdrop for family pictures.",
+  "q": "Cherry Hill Farms Santaquin UT",
+  "mine": "Even before we moved to the area, my family made it a tradition to come out for their events."
+ },
+ {
+  "slug": "fiesta-days",
+  "name": "Fiesta Days Rodeo",
+  "city": "Spanish Fork",
+  "type": "family",
+  "text": "Part of Spanish Fork's Fiesta Days every summer, with bull riding, barrel racing and team roping. It draws crowds from around the state and is a fun night out for the whole family.",
+  "q": "Spanish Fork Fairgrounds Arena UT",
+  "mine": ""
+ },
+ {
+  "slug": "art-museum",
+  "name": "Springville Museum of Art",
+  "city": "Springville",
+  "type": "culture",
+  "text": "One of Utah's oldest art museums, with a focus on Utah artists plus rotating exhibits from local talent. Admission is free.",
+  "q": "Springville Museum of Art UT",
+  "mine": ""
+ },
+ {
+  "slug": "krishna",
+  "name": "Sri Sri Radha Krishna Temple",
+  "city": "Spanish Fork",
+  "type": "culture",
+  "text": "A striking temple rising out of the fields west of Spanish Fork, known for its Holi Festival of Colors each spring. Visitors can tour the grounds, see the peacocks, and eat at the small vegetarian cafe.",
+  "q": "Sri Sri Radha Krishna Temple Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "dream-mine",
+  "name": "Dream Mine",
+  "city": "Salem",
+  "type": "culture",
+  "text": "Also known as the Relief Mine, this is a local legend on the mountainside above Salem. The mine was never commercially productive, but folklore says it will one day be filled with riches at the end of the world. You can't tour it (it's private property), but you can spot the white buildings on the hillside from below. Even some longtime locals only know it by rumor as the mysterious mine tied to Utah pioneer superstition.",
+  "q": "Dream Mine Salem UT",
+  "mine": ""
+ },
+ {
+  "slug": "wings-wheels",
+  "name": "Wings and Wheels",
+  "city": "Spanish Fork",
+  "type": "culture",
+  "text": "An annual September event at the Spanish Fork Airport with historic planes, classic cars and air shows. Part of the proceeds support the planned Vintage Aviation Museum at the airport.",
+  "q": "Spanish Fork Municipal Airport UT",
+  "mine": ""
+ },
+ {
+  "slug": "peteetneet",
+  "name": "Peteetneet Museum and Cultural Arts Center",
+  "city": "Payson",
+  "type": "culture",
+  "text": "A free local history museum in a grand Victorian schoolhouse, with pioneer artifacts, an old classroom and historic fashion exhibits. The building is on the National Register of Historic Places.",
+  "q": "Peteetneet Museum Payson UT",
+  "mine": ""
+ },
+ {
+  "slug": "chieftain",
+  "name": "Santaquin Chieftain Museum",
+  "city": "Santaquin",
+  "type": "culture",
+  "text": "A volunteer-run museum in Santaquin's old schoolhouse with local pioneer stories, Native American artifacts and hands-on exhibits. Free, and easy to miss from I-15.",
+  "q": "Santaquin Chieftain Museum UT",
+  "mine": ""
+ },
+ {
+  "slug": "legends",
+  "name": "Legends Motorcycle Museum",
+  "city": "Springville",
+  "type": "culture",
+  "text": "Two floors of rare and vintage motorcycles inside the Legends Motorcycles shop, many from before World War II, plus a retro cafe. Free admission.",
+  "q": "Legends Motorcycles Springville UT",
+  "mine": ""
+ }
+];
+/* ===== End spots ===== */
+
+(function(){
+  var CITIES=["Springville","Spanish Fork","Salem","Payson","Santaquin"];
+  var TYPES={outdoors:"Outdoors",local:"Local favorites",family:"Family",culture:"History and culture"};
+  var PHOTO_DIR="New%20Construction%20Checklist/Marketing%202026/";
+  var state={city:"all",type:"all"};
+  function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+  function slugify(s){return s.toLowerCase().replace(/[^a-z]+/g,"-");}
+
+  // Read ?city=payson&type=family so links can open pre-filtered
+  var q=new URLSearchParams(location.search);
+  var qc=(q.get("city")||"").toLowerCase(), qt=(q.get("type")||"").toLowerCase();
+  CITIES.forEach(function(c){if(slugify(c)===qc)state.city=c;});
+  if(TYPES[qt])state.type=qt;
+
+  function btn(row,val,label,key){
+    var b=document.createElement("button");b.type="button";b.className="fb";b.textContent=label;b.dataset.val=val;
+    b.addEventListener("click",function(){state[key]=val;render();});
+    document.getElementById(row).appendChild(b);
+  }
+  btn("cityRow","all","All cities","city");CITIES.forEach(function(c){btn("cityRow",c,c,"city");});
+  btn("typeRow","all","Everything","type");Object.keys(TYPES).forEach(function(t){btn("typeRow",t,TYPES[t],"type");});
+
+  document.getElementById("grid").innerHTML=SPOTS.map(function(s){
+    var maps="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s.q);
+    return '<article class="spot" data-city="'+esc(s.city)+'" data-type="'+s.type+'">'+
+      '<div class="ph"><img src="'+PHOTO_DIR+'local-'+s.slug+'.jpg" alt="'+esc(s.name)+'" loading="lazy"><div class="fallback"><span>'+esc(TYPES[s.type])+'</span><strong>'+esc(s.city)+'</strong></div></div>'+
+      '<div class="body"><p class="meta">'+esc(s.city)+' &middot; '+esc(TYPES[s.type])+'</p><h2>'+esc(s.name)+'</h2><p>'+esc(s.text)+'</p>'+
+      (s.mine?'<p class="mine">'+esc(s.mine)+'</p>':'')+
+      '<a class="dir" href="'+maps+'" target="_blank" rel="noopener">Get directions &rarr;</a></div></article>';
+  }).join("");
+  document.querySelectorAll(".ph img").forEach(function(img){
+    function ok(){img.parentElement.classList.add("has-photo");}
+    function bad(){img.remove();}
+    if(img.complete){img.naturalWidth?ok():bad();}else{img.addEventListener("load",ok);img.addEventListener("error",bad);}
+  });
+
+  function render(){
+    document.querySelectorAll("#cityRow .fb").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.val===state.city?"true":"false");});
+    document.querySelectorAll("#typeRow .fb").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.val===state.type?"true":"false");});
+    var n=0;
+    document.querySelectorAll(".spot").forEach(function(el){
+      var show=(state.city==="all"||el.dataset.city===state.city)&&(state.type==="all"||el.dataset.type===state.type);
+      el.hidden=!show;if(show)n++;
+    });
+    var where=state.city==="all"?"South County":state.city;
+    var what=state.type==="all"?"spots":TYPES[state.type].toLowerCase()+" spots";
+    document.getElementById("count").textContent=n?(n+" "+what+" in "+where):"Nothing here yet for that combination. Try another city or type.";
+    try{var u=new URL(location.href);state.city==="all"?u.searchParams.delete("city"):u.searchParams.set("city",slugify(state.city));state.type==="all"?u.searchParams.delete("type"):u.searchParams.set("type",state.type);history.replaceState(null,"",u);}catch(e){}
+  }
+  render();
+})();
+</script>
+</body>
+</html>

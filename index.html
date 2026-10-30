@@ -83,6 +83,9 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .areas{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
 .areas li{padding:7px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:15px}
 .areas.home li{border-color:var(--gold);color:var(--gold-light)}
+.areas.home li a{text-decoration:none;color:inherit}
+.areas.home li:has(a):hover{background:var(--gold);color:var(--black)}
+.area-link{display:inline-block;margin-top:2px;color:var(--gold-light);font-weight:700;font-size:15px;text-decoration:none}
 
 /* About */
 .about{padding:104px 0 0}
@@ -218,6 +221,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
           <a href="before-you-build.html">Before You Build checklist<small>Track every step, print or save</small></a>
           <a href="model-home-checklist.html">Model home checklist<small>Questions to ask the sales rep</small></a>
           <a href="relocate.html">Moving to Utah<small>Relocation guide and 25 moving tips</small></a>
+          <a href="live-like-a-local.html">Live like a local<small>Hidden gems of South County</small></a>
           <div class="sn-sep"><a href="sell-first.html">Sell first or build first?<small>Count back from your move-in date</small></a>
           <a href="home-value.html">What's my home worth?<small>For sellers: a real number from recent sales</small></a></div>
         </div>
@@ -345,9 +349,10 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
         <p class="sec-sub">South County is home base. I help buyers and sellers all over Utah County.</p>
         <p class="area-h">Home base: South County</p>
         <ul class="areas home">
-          <li>Springville</li><li>Mapleton</li><li>Spanish Fork</li><li>Salem</li><li>Payson</li><li>Elk Ridge</li><li>Santaquin</li>
+          <li><a href="live-like-a-local.html?city=springville">Springville</a></li><li>Mapleton</li><li><a href="live-like-a-local.html?city=spanish-fork">Spanish Fork</a></li><li><a href="live-like-a-local.html?city=salem">Salem</a></li><li><a href="live-like-a-local.html?city=payson">Payson</a></li><li>Elk Ridge</li><li><a href="live-like-a-local.html?city=santaquin">Santaquin</a></li>
         </ul>
-        <p class="area-h">Central and North County</p>
+        <a class="area-link" href="live-like-a-local.html">Things to do in South County &rarr;</a>
+        <p class="area-h" style="margin-top:22px">Central and North County</p>
         <ul class="areas">
           <li>Provo</li><li>Orem</li><li>Vineyard</li><li>American Fork</li><li>Pleasant Grove</li><li>Lehi</li><li>Saratoga Springs</li><li>Eagle Mountain</li>
         </ul>
