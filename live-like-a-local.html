@@ -293,6 +293,33 @@ var SPOTS=[
   "mine": ""
  },
  {
+  "slug": "canyon-view",
+  "name": "Canyon View Park",
+  "city": "Spanish Fork",
+  "type": "outdoors",
+  "text": "One of the city's biggest parks, 23.5 acres along the Spanish Fork River, with a fishing pond, two playgrounds, volleyball, open fields and three reservable pavilions with grills. It's also an access point for the Spanish Fork River Trail, and in December it becomes the Festival of Lights.",
+  "q": "Canyon View Park 3300 E Powerhouse Rd Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "spanish-fork-canyon",
+  "name": "Spanish Fork Canyon drives",
+  "city": "Spanish Fork",
+  "type": "outdoors",
+  "text": "Head east on Highway 6 past the wind turbines. Turn off on Diamond Fork Road for forest, red-rock cliffs and Diamond Fork Arch from the Red Ledges picnic area, or stay on 6 to Thistle, the railroad town a 1983 landslide flooded. Fall color peaks late September through October. The end of Diamond Fork Road is dirt, so check conditions after a storm.",
+  "q": "Red Ledges Picnic Area Diamond Fork Canyon UT",
+  "mine": ""
+ },
+ {
+  "slug": "maple-mountain-hikes",
+  "name": "Maple Mountain trails",
+  "city": "Spanish Fork",
+  "type": "outdoors",
+  "text": "Spanish Fork Peak, the 10,192-foot summit of Maple Mountain, is a hard day: about 10.5 miles round trip and 4,500 feet of climbing on the Right Fork Maple Canyon Trail, with meadows and a small lake near the top. For something easier, the Left Fork trail is about 3 miles with a gentle climb. Both start from the Maple Canyon trailhead in Mapleton, no fee needed.",
+  "q": "Maple Canyon Trailhead Mapleton UT",
+  "mine": ""
+ },
+ {
   "slug": "the-barn",
   "name": "The Barn",
   "city": "Spanish Fork",
@@ -392,6 +419,24 @@ var SPOTS=[
   "mine": ""
  },
  {
+  "slug": "festival-of-lights",
+  "name": "Festival of Lights",
+  "city": "Spanish Fork",
+  "type": "family",
+  "text": "A drive-through light show at Canyon View Park every night from Thanksgiving through New Year's Day, 6 to 10 pm, running since 1992. Tune to the radio station posted at the entrance and turn your headlights off at the booth. Tickets are per car at sfcitytix.com and cost less online than at the gate.",
+  "q": "Canyon View Park 3300 E Powerhouse Rd Spanish Fork UT",
+  "mine": ""
+ },
+ {
+  "slug": "Spanish-Oaks",
+  "name": "The Oaks at Spanish Fork",
+  "city": "Spanish Fork",
+  "type": "family",
+  "text": "The city golf course locals still call Spanish Oaks: 18 holes, par 72, designed by Masters champion Billy Casper and open since 1982. It sits at the mouth of the canyon with a driving range and an event center, and the season usually runs March through October. Regulars say mid-morning tee times beat the canyon wind.",
+  "q": "The Oaks at Spanish Fork 2300 E Powerhouse Rd UT",
+  "mine": ""
+ },
+ {
   "slug": "art-museum",
   "name": "Springville Museum of Art",
   "city": "Springville",
@@ -453,13 +498,22 @@ var SPOTS=[
   "text": "Two floors of rare and vintage motorcycles inside the Legends Motorcycles shop, many from before World War II, plus a retro cafe. Free admission.",
   "q": "Legends Motorcycles Springville UT",
   "mine": ""
+ },
+ {
+  "slug": "frontrunner",
+  "name": "FrontRunner South Extension",
+  "city": "Spanish Fork",
+  "type": "coming",
+  "text": "FrontRunner ends in Provo today. UTA plans new stations in Springville, Spanish Fork and Payson, with Spanish Fork's on the west side of I-15 between Center Street and 400 North, where the city is planning homes, offices and shops. It's still in environmental review and preliminary design with no construction funding yet. UTA's long-range plan targets the early 2030s.",
+  "q": "Center Street and I-15 Spanish Fork UT",
+  "mine": ""
  }
 ];
 /* ===== End spots ===== */
 
 (function(){
   var CITIES=["Springville","Spanish Fork","Salem","Payson","Santaquin"];
-  var TYPES={outdoors:"Outdoors",local:"Local favorites",family:"Family",culture:"History and culture"};
+  var TYPES={outdoors:"Outdoors",local:"Local favorites",family:"Family",culture:"History and culture",coming:"What's coming"};
   var PHOTO_DIR="New%20Construction%20Checklist/Marketing%202026/";
   var state={city:"all",type:"all"};
   function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
@@ -502,7 +556,7 @@ var SPOTS=[
       el.hidden=!show;if(show)n++;
     });
     var where=state.city==="all"?"South County":state.city;
-    var what=state.type==="all"?"spots":TYPES[state.type].toLowerCase()+" spots";
+    var what=state.type==="all"?"spots":state.type==="coming"?(n===1?"upcoming project":"upcoming projects"):TYPES[state.type].toLowerCase()+" spots";
     document.getElementById("count").textContent=n?(n+" "+what+" in "+where):"Nothing here yet for that combination. Try another city or type.";
     try{var u=new URL(location.href);state.city==="all"?u.searchParams.delete("city"):u.searchParams.set("city",slugify(state.city));state.type==="all"?u.searchParams.delete("type"):u.searchParams.set("type",state.type);history.replaceState(null,"",u);}catch(e){}
   }
